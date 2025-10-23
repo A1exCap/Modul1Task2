@@ -10,7 +10,7 @@
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    Array[i, j] = rand.Next(1, 101);
+                    Array[i, j] = rand.Next(-100, 101);
                     Console.Write(Array[i, j] + "\t");
                 }
                 Console.WriteLine();
@@ -22,6 +22,7 @@
             {
                 for (int j = 0; j < 5; j++)
                 {
+                   if (Array[i,j] > 0)
                    rowsSum[i] += Array[i, j];
                 }
             }
